@@ -5,7 +5,8 @@ public class Car extends Vehicle{
     }
 
     @Override
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public void checkTrailer() {
+        super.checkTrailer();
+        System.out.println("У автомобиля нет проверки прицепа.");
     }
 }

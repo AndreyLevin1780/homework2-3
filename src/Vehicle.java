@@ -1,8 +1,8 @@
 public abstract class Vehicle implements VehicleMaintenance {
 
-   private String modelName;
+   private final String modelName;
 
-   private int wheelsCount;
+   private final int wheelsCount;
 
    public Vehicle(String modelName, int wheelsCount) {
       this.modelName = modelName;
@@ -19,17 +19,17 @@ public abstract class Vehicle implements VehicleMaintenance {
 
     @Override
     public void updateTyre() {
-       System.out.println("Меняем покрышку");
+       System.out.println("Меняем покрышку.");
     }
 
    @Override
    public void checkEngine() {
-      System.out.println("Проверяем двигатель");
+      System.out.println("Проверяем двигатель.");
    }
 
    @Override
    public void checkTrailer() {
-      System.out.println("Проверяем прицеп");
+      System.out.println("Проверяем прицеп.");
    }
 
 }
