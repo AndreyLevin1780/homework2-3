@@ -1,4 +1,4 @@
-public abstract class Vehicle implements VehicleMaintenance {
+public abstract class Vehicle  {
 
    private final String modelName;
 
@@ -17,20 +17,9 @@ public abstract class Vehicle implements VehicleMaintenance {
       return wheelsCount;
    }
 
-    @Override
-    public void updateTyre() {
-       System.out.println("Меняем покрышку.");
-    }
+   public abstract void check();
 
-   @Override
-   public void checkEngine() {
-      System.out.println("Проверяем двигатель.");
-   }
-
-   @Override
-   public void checkTrailer() {
-      System.out.println("Проверяем прицеп.");
-   }
+   public abstract void updateTyre();
 
 }
 

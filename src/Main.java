@@ -14,12 +14,8 @@ public class Main {
 
         ServiceStation serviceStation = new ServiceStation();
 
-        System.out.println();
-        serviceStation.check(car1,null,null);
-        System.out.println();
-        serviceStation.check(null,truck1,null);
-        System.out.println();
-        serviceStation.check(null,null,bicycle1);
-
+        serviceStation.check(car1);
+        serviceStation.check(truck2);
+        serviceStation.check(bicycle1);
     }
 }

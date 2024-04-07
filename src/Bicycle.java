@@ -6,14 +6,15 @@ public class Bicycle extends Vehicle{
     }
 
     @Override
-    public void checkEngine() {
-        super.checkEngine();
-        System.out.println("У велосипеда нет проверки двигателя.");
+    public void check() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
     }
 
     @Override
-    public void checkTrailer() {
-        super.checkTrailer();
-        System.out.println("У велосипеда нет проверки прицепа.");
+    public void updateTyre() {
+        System.out.println("Меняем покрышки у велосипеда.");
     }
 }
